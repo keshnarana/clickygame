@@ -1,0 +1,43 @@
+.navbar {
+  background:rgb(15, 153, 56);
+  min-height: 70px;
+  font-size: 18px;
+  width: 96%;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  color: #fff;
+z-index: 9;
+}
+a{
+  color: #fff;
+}
+.navbar div {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 96%;
+}
+
+.navbar div:first-child {
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+
+.pipe {
+  margin: 0 10px;
+}
+
+
+@media (min-width: 576px) {
+  .navbar {
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    font-size: calc(10px + 14 * (96vw - 320px) / 800);
+  }
+
+  .navbar div {
+    margin-bottom: 0;
+    text-align: center;
+    width: 33.333%;
+  }
+}
